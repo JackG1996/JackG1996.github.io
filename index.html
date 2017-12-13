@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Bar Chart</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!-- Alternatively use d3.js here -->
+    <!-- Reference style.css -->
+    <link rel = "stylesheet" type="text/css" href="style.css">
+
+    <!-- Reference minified version of D3 -->
     <script type="text/javascript" src="d3.min.js"></script>
-
   </head>
 
   <body>
+d3.json("https://api.github.com/search/users?q=JackG1996", function(data) {
+console.log(data);
+});
     <script type="text/javascript" src="barchart.js"></script>
   </body>
 </html>
