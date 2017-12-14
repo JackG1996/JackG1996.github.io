@@ -26,7 +26,7 @@ li {
 	cursor: pointer;
 }
 li:hover {
-	background:url('grey_wash_wall_@2X.png');
+	background: url('grey_wash_wall.png');
 }
 rect {
 	-moz-transition: all 0.3s;
