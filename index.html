@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> My Blog </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <body>
+
+    <div id="header">
+      <div class="container">
+        <a id="header-title" href="index.html">My Puzzles!</a>
+        <ul id= "header-nav">
+          <li><a href="about.html">About</a></li>
+          <li><a href="mailto:gallaj10@tcd.ie">Contact</a></li>
+        </ul>
+        </div>
+      </div>
+
+    <div id="content">
+      <div class="container">
+        <div class="post">
+          <div class="post-author">
+            <img src="me.png">
+            <span>Jack Gallagher</span>
+          </div>
+          <p class="post-date">01/11/2018</p>
+          <h3 class="post-title">Algorithms</h3>
+          <div class="post-content">
+            <p>
+            <strong>Determine whether an integer is a palindrome. An integer is a <br>
+              palindrome when it reads the same backward as forward. <br></strong>
+              <br>
+              <strong>Example 1:<br></strong>
+              Input: 121<br>
+              Output: true<br>
+              <br>
+              <strong>Example 2:<br></strong>
+              Input: -121<br>
+              Output: false<br>
+              Explanation: From left to right, it reads -121. From right to left, it becomes 121-.<br>
+              Therefore it is not a palindrome.<br>
+              <br>
+              <strong>Example 3:<br> </strong>
+              Input: 10<br>
+              Output: false<br>
+              Explanation: Reads 01 from right to left. Therefore it is not <br>
+              a palindrome.
+
+            </p>
+            <p>
+            <strong>  public static boolean palindrome(int n)<br>
+              {<br>
+                &nbsp;String str = String.valueOf(n);<br>
+                &nbsp;for (int i =0,j=str.length()-1; j>i; i++,j--)<br>
+                {<br>
+                &ensp; if(str.charAt(i)!=str.charAt(j))<br>
+                  &ensp;{<br>
+                    &ensp;&nbsp;return false;<br>
+                &ensp; }<br>
+                &nbsp;}<br>
+              &nbsp;  return true;<br> </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="content">
+        <div class="container">
+          <div class="post">
+            <div class="post-author">
+              <img src="me.png">
+              <span>Jack Gallagher</span>
+            </div>
+            <p class="post-date">02/11/2018</p>
+            <h3 class="post-title">Algorithms</h3>
+            <div class="post-content">
+              <p>
+                <strong>Given a 32-bit signed integer, reverse digits of an integer.</strong>
+                <br>
+                <br><strong>Example 1:</strong>
+                <br>Input: 123
+                <br>Output: 321
+                <br>
+                <br><strong>Example 2:</strong>
+                <br>Input: -123
+                <br>Output: -321
+                <br>
+                <br><strong>Example 3:</strong>
+                <br>Input: 120
+                <br>Output: 21
+              </p>
+              <p>
+                <strong>  public static int reverse(int x)
+	               {<br>
+		                 {<br>
+			                   &nbsp; int result = 0;
+                         <br>
+			                   &nbsp; while (x != 0)<br>
+			                  &ensp; { <br>
+				                  &ensp; &nbsp;int tail = x % 10; <br>
+				                  &ensp; &nbsp;int newResult = result * 10 + tail;<br>
+				                  &ensp; &nbsp;if ((newResult - tail) / 10 != result)<br>
+				                     &emsp;{ <br>
+                              &emsp; return 0; <br>
+                             &emsp;}<br>
+				                      &emsp;result = newResult;<br>
+    				                   &emsp;x = x / 10;<br>
+			                  &ensp;}<br>
+
+			               &ensp;return result;<br>
+	              }</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+    <div id="footer">
+      <div class="container">
+
+        <div class ="column">
+          <h4> My Links </h4>
+          <p>
+            <a href="https://github.com/JackG1996"target="_blank">Github</a>
+            <br>
+            <a href="https://www.linkedin.com/in/jack-gallagher-60265913a/"target="_blank">LinkedIn</a>
+          </p>
+        </div>
+
+          <div class ="column">
+          <h4> My Shtory </h4>
+          <p>
+            Yello there! If you've gotten this far I feel sorry for you! <br>
+            This is just a little blog about algorithms I am learning :)
+          </p>
+      </div>
+
+    </div>
+  </div>
+
+  </body>
+</html>
